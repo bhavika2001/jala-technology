@@ -1,0 +1,303 @@
+Sol for Q1:
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("Brigt IT Career ");
+        }
+
+    }
+
+}
+
+
+Sol for Q2:
+
+public class Solution {
+
+	public static void main(String[] args) {
+		int num =1;
+		while(num<=20){
+			System.out.println(num++);
+		}
+
+	}
+}
+
+
+Sol for Q3:
+
+class Solution{
+	public static void main(String[] args){
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter any two numbers to check for equality: ");
+		int num1=in.nextInt();
+		int num2=in.nextInt();
+		if(num1==num2){
+		System.out.println("The two numbers are equal");
+		}
+		else if(num1!=num2){
+		System.out.println("The numbers are not equal");
+		}
+	}
+}
+
+
+Sol for Q4:
+
+class CheckEvenOdd
+{
+  public static void main(String args[])
+  {
+    int num;
+    System.out.println("Enter an Integer number:");
+
+    //The input provided by user is stored in num
+    Scanner input = new Scanner(System.in);
+    num = input.nextInt();
+
+    /* If number is divisible by 2 then it's an even number
+     * else odd number*/
+    if ( num % 2 == 0 )
+        System.out.println("Entered number is even");
+     else
+        System.out.println("Entered number is odd");
+  }
+}
+
+
+
+Sol for Q5:
+
+public class Solution
+{
+    public static void main(String[] args) 
+    {
+        int x, y, z;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the first number:");
+        x = s.nextInt();
+        System.out.print("Enter the second number:");
+        y = s.nextInt();
+        System.out.print("Enter the third number:");
+        z = s.nextInt();
+        if(x > y && x > z)
+        {
+            System.out.println("Largest number is:"+x);
+        }
+        else if(y > z)
+        {
+            System.out.println("Largest number is:"+y);
+        }
+        else
+        {
+            System.out.println("Largest number is:"+z);
+        }
+ 
+    }
+}
+
+
+
+
+Sol for Q6:
+
+class Solution {
+   public static void main(String args[]) {
+	int n = 100;
+	System.out.print("Even Numbers from 1 to "+n+" are: ");
+	for (int i = 1; i <= n; i++) {
+	   //if number%2 == 0 it means its an even number
+	   if (i % 2 == 0) {
+		System.out.print(i + " ");
+	   }
+	}
+   }
+}
+
+
+Sol for Q7:
+public class DoWhileExample {    
+public static void main(String[] args) {    
+    int i=1;    
+    do{    
+        System.out.println(i);    
+    i++;    
+    }while(i<=10);    
+}    
+}    
+
+
+
+Sol for Q8:
+public class Armstrong {
+
+    public static void main(String[] args) {
+
+        int number = 371, originalNumber, remainder, result = 0;
+
+        originalNumber = number;
+
+        while (originalNumber != 0)
+        {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, 3);
+            originalNumber /= 10;
+        }
+
+        if(result == number)
+            System.out.println(number + " is an Armstrong number.");
+        else
+            System.out.println(number + " is not an Armstrong number.");
+    }
+}
+
+Sol for Q9:
+
+import java.util.Scanner;
+class PrimeCheck
+{
+   public static void main(String args[])
+   {		
+	int temp;
+	boolean isPrime=true;
+	Scanner scan= new Scanner(System.in);
+	System.out.println("Enter any number:");
+	//capture the input in an integer
+	int num=scan.nextInt();
+        scan.close();
+	for(int i=2;i<=num/2;i++)
+	{
+           temp=num%i;
+	   if(temp==0)
+	   {
+	      isPrime=false;
+	      break;
+	   }
+	}
+	//If isPrime is true then the number is prime else not
+	if(isPrime)
+	   System.out.println(num + " is a Prime Number");
+	else
+	   System.out.println(num + " is not a Prime Number");
+   }
+}
+
+
+Sol for 10:
+
+import java.util.Scanner;
+public class Example24  {
+
+    public static void main(String args[])
+    {
+	 Scanner in = new Scanner(System.in);
+     System.out.print("Input a number: ");
+     int n = in.nextInt();
+     int sum = 0, r;
+	 int temp = n;    
+     while(n>0)
+	   {    
+        r = n % 10;   
+        sum = (sum*10)+r;    
+        n = n/10;    
+       }    
+      if(temp==sum)    
+        System.out.println("It is a Palindrome number.");    
+      else    
+        System.out.println("Not a palindrome");    
+     }  
+}
+
+
+Sol for 11:
+
+import java.io.*;
+import java.util.*;
+class EvenOdd
+{
+public static void main(String args[])
+{
+int num;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the value of number1");
+num=sc.nextInt();
+if(num%2==0)
+{
+System.out.println("Even no");
+}
+else
+{
+System.out.println("Odd no");
+} 
+} 
+}
+
+
+Sol for 12:
+
+import java.util.*; 
+public class Loop12 { 
+	public static void main(String[] args) { 
+		Scanner s=new Scanner(System.in); 
+		System.out.println("Enter m or f"); 
+		char c=s.next().charAt(0); 
+	 
+		 
+		switch(c){ 
+		case 'm': 
+			System.out.println("Gender is male"); 
+			break; 
+		case 'f': 
+			System.out.println("Gender is female"); 
+			break; 
+		} 
+		s.close(); 
+ 
+	} 
+ 
+}
+
+Sol for 13:
+
+public class Largest {
+
+    public static void main(String[] args) {
+
+        double n1 = 10, n2 = 20, n3 = 30;
+
+        if( n1 >= n2 && n1 >= n3)
+            System.out.println(n1 + " is the largest number.");
+
+        else if (n2 >= n1 && n2 >= n3)
+            System.out.println(n2 + " is the largest number.");
+
+        else
+            System.out.println(n3 + " is the largest number.");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
