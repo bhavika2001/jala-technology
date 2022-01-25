@@ -1,0 +1,180 @@
+sol for Q1:
+1.
+import java.io.*;
+import java.lang.*;
+ 
+class Test {
+    public static void main(String[] args)
+    {
+        // Declare String without using new operator
+        String s = "GeeksforGeeks";
+ 
+        // Prints the String.
+        System.out.println("String s = " + s);
+ 
+        // Declare String using new operator
+        String s1 = new String("GeeksforGeeks");
+ 
+        // Prints the String.
+        System.out.println("String s1 = " + s1);
+    }
+}
+
+2.
+class StringStorage {
+    public static void main(String args[])
+    {
+        String s1 = "TAT";
+        String s2 = "TAT";
+        String s3 = new String("TAT");
+        String s4 = new String("TAT");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
+    }
+}
+
+
+sol for Q2:
+class TestStringConcatenation1{  
+ public static void main(String args[]){  
+   String s="Sachin"+" Tendulkar";  
+   System.out.println(s);//Sachin Tendulkar  
+ }  
+}  
+
+sol for Q3:
+public class LengthExample{  
+public static void main(String args[]){  
+String s1="bhavika";  
+String s2="kotewar";  
+System.out.println("string length is: "+s1.length());//7   
+System.out.println("string length is: "+s2.length());//7  
+}} 
+
+sol for Q4:
+public class SubstringExample{  
+public static void main(String args[]){  
+String s1="bhavikakotewar";  
+System.out.println(s1.substring(2,4));//returns av  
+ 
+}}  
+
+sol for Q5:
+public class IndexOfExample{  
+public static void main(String args[]){  
+String s1="this is index of example";  
+//passing substring  
+int index1=s1.indexOf("is");//returns the index of is substring  
+int index2=s1.indexOf("index");//returns the index of index substring  
+System.out.println(index1+"  "+index2);//2 8  
+
+
+sol for Q6:
+import java.util.regex.*;  
+public class RegexExample1{  
+public static void main(String args[]){  
+//1st way  
+Pattern p = Pattern.compile(".s");//. represents single character  
+Matcher m = p.matcher("as");  
+boolean b = m.matches();  
+  
+//2nd way  
+boolean b2=Pattern.compile(".s").matcher("as").matches();  
+  
+//3rd way  
+boolean b3 = Pattern.matches(".s", "as");  
+  
+System.out.println(b+" "+b2+" "+b3);  
+}}  
+
+sol for Q7:
+class Teststringcomparison1{  
+ public static void main(String args[]){  
+   String s1="Sachin";  
+   String s2="Sachin";  
+   String s3=new String("Sachin");  
+   String s4="Saurav";  
+   System.out.println(s1.equals(s2));//true  
+   System.out.println(s1.equals(s3));//true  
+   System.out.println(s1.equals(s4));//false  
+ }  
+}  
+
+sol for Q8:
+
+public class StringComapre {
+  public static void main(String[] args) {
+    String str1 = "Hello";
+    String str2 = "Hello";
+    String str2 = "hello";
+    String str3 = "hello";
+    String str = "Compare this String";
+    //returns true
+    System.out.println("str1.equals(str2)-" + str1.equals(str2));
+    //returns true as case is ignored
+    System.out.println("str1.equalsIgnoreCase(str3)-" + str1.equalsIgnoreCase(str3));
+System.out.println("str1.compareTo(str2): " + str1.compareToIgnoreCase(str2));
+    // returns positive integer
+    System.out.println("str1.compareTo(str3): " + str1.compareTo(str3));
+    // returns true
+    System.out.println("str.endsWith(\"String\"): " + str.endsWith("String"));
+    // returns true
+    System.out.println("str.startsWith(\"Compare\"): " + str.startsWith("Compare"));
+  }
+}
+
+
+sol for Q9:
+
+public class StringTrimExample{  
+public static void main(String args[]){  
+String s1="  hello string   ";  
+System.out.println(s1+"bhavika");//without trim()  
+System.out.println(s1.trim()+"bhavika");//with trim()  
+}}  
+
+sol for 10:
+public class ReplaceExample1{  
+public static void main(String args[]){  
+String s1="hii i am good";  
+String replaceString=s1.replace('a','e');//replaces all occurrences of 'a' to 'e'  
+System.out.println(replaceString);  
+}}  
+
+
+sol for 11:
+public class SplitExample{  
+public static void main(String args[]){  
+String s1="java string split method ";  
+String[] words=s1.split("\\s");//splits the string based on whitespace  
+//using java foreach loop to print elements of string array  
+for(String w:words){  
+System.out.println(w);  
+}  
+}}  
+
+sol for 12:
+public class IntToStringExample1{  
+public static void main(String args[]){  
+int i=200;  
+String s=String.valueOf(i);  
+System.out.println(i+100);//300 because + is binary plus operator  
+System.out.println(s+100);//200100 because + is string concatenation operator  
+}} 
+
+sol for 15:
+public class Sol {
+    public static void main(String args[]) {
+        String S1 = new String("UPPERCASE CONVERTED TO LOWERCASE");
+        String S2 = new String("lowercase converted to uppercase");
+        //Convert to LowerCase
+        System.out.println(S1.toLowerCase());
+
+        //Convert to UpperCase
+        System.out.println(S1.toUpperCase());
+
+    }
+}
+ 
