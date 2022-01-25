@@ -1,0 +1,110 @@
+Sol for Q1:
+
+class this_Test
+{
+     int val1;
+     int val2;
+ 
+    // Parameterized constructor
+    this_Test(int val1, int val2)
+    {
+        this.val1 = val1 + val1;
+        this.val2 = val2 + val2;
+    }
+ 
+   void display()
+    {
+          System.out.println("Value val1 = " + val1 + " Value val2 = " + val2);
+    }
+}
+ 
+class Main{
+ 
+       public static void main(String[] args)
+       {
+            this_Test object = new this_Test(5,10);
+            object.display();
+       }
+}
+
+
+Sol for Q2:
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void eat(){System.out.println("eating bread...");}  
+void bark(){System.out.println("barking...");}  
+void work()
+{  
+super.eat();  
+bark();  
+}  
+}  
+class TestSuper2{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+d.work();  
+}}  
+
+
+Sol for Q3:
+
+class Student{  
+int rollno;  
+String name;  
+float fee;  
+Student(int rollno,String name,float fee){  
+this.rollno=rollno;  
+this.name=name;  
+this.fee=fee;  
+}  
+void display(){System.out.println(rollno+" "+name+" "+fee);}  
+}  
+  
+class TestThis2{  
+public static void main(String args[]){  
+Student s1=new Student(111,"ankit",5000f);  
+Student s2=new Student(112,"sumit",6000f);  
+s1.display();  
+s2.display();  
+}}  
+
+Sol for Q5:
+class Animal{  
+Animal(){System.out.println("animal is created");}  
+}  
+class Dog extends Animal{  
+Dog(){  
+super();  
+System.out.println("dog is created");  
+}  
+}  
+class TestSuper3{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+}}  
+
+Sol for Q6:
+class Person{  
+int id;  
+String name;  
+Person(int id,String name){  
+this.id=id;  
+this.name=name;  
+}  
+}  
+class Emp extends Person{  
+float salary;  
+Emp(int id,String name,float salary){  
+super(id,name);//reusing parent constructor  
+this.salary=salary;  
+}  
+void display(){System.out.println(id+" "+name+" "+salary);}  
+}  
+class TestSuper5{  
+public static void main(String[] args){  
+Emp e1=new Emp(1,"ankit",45000f);  
+e1.display();  
+}}  
+
