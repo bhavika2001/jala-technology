@@ -1,0 +1,139 @@
+Solution of Que1:
+A Class is like an object constructor, or a "blueprint" for creating objects.
+public class Main {
+  int x = 5;
+}
+
+To create an object of Main, specify the class name, followed by the object name, and use the keyword new
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+To print method:
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+}
+
+
+Solution of Q2:
+public class Solution {
+ 
+ public static void main(String[] args) {
+  System.out.println("Bhavika Kotewar");
+ }
+ 
+}
+
+
+
+Sol for Q3:
+
+import java.io.*;  
+  
+
+   
+ public class Calculate{  
+    /** 
+     * This method calculates the summation of two integers. 
+     * @param input1 This is the first parameter to sum() method 
+     * @param input2 This is the second parameter to the sum() method. 
+     * @return int This returns the addition of input1 and input2 
+     */  
+    public int sum(int input1, int input2){  
+        return input1 + input2;  
+    }  
+      
+    public static void main(String[] args) {   // main method (single line comment)
+        Calculate obj = new Calculate(); 
+        int result = obj.sum(40, 20);  
+        /* This will print result 
+           Multiline comment*/ 
+        System.out.println("Addition of numbers: " + result);  
+    }    
+ }  
+
+
+
+
+sol of Q4:
+
+public class Solution
+{
+  public static void main(String args[])
+  {
+     int a=10;
+     System.out.println(a);
+
+     boolean myBool = true;
+      if(myBool == true)
+      System.out.println("I am using a Boolean data type");
+      System.out.println(myBool);
+
+     float b= 10.2f;
+System.out.println(b);
+
+    double c=54.258622;
+System.out.println(c);
+
+    char marks,grade;
+    marks = '8';
+    grade = 'B';
+    System.out.println("Marks: "+marks);
+    System.out.println("Grade: "+grade);
+  }
+} 
+
+
+
+Sol for Q5:
+#include<stdio.h>  
+  
+    // Global variables  
+    int a;  
+    int b;  
+    int Add()  
+    {  
+  
+        return a + b;  
+    }  
+  
+    int Mul()  
+  
+    {  
+    int c=10; //Local Variable  
+    int d=20;  ////Local Variable  
+    return c*d;  
+    }  
+    void main()  
+    {  
+        int Ans1, Ans2, c=30;// Local variable  
+        a = 50;  
+        b = 70;  
+          
+        Ans1 = Add();  
+        Ans2= Mul();  
+          
+        printf("The addition result is: %d\n",Ans1);  
+                  printf("The Multiplication result is: %d\n",Ans2);  
+}
+
+
+Sol for Q6:
+public class MyClass {
+ 
+    static void display() {
+        System.out.println("Bhavika Kotewar");
+    }
+ 
+    public static void main(String[] args) {
+       display();
+    }
+}
+
