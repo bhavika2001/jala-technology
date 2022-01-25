@@ -1,0 +1,152 @@
+Sol for Que 1:
+
+public class Solution{  
+public static void main(String args[]){  
+int a=10;  
+int b=5;  
+System.out.println(a+b);//15  
+System.out.println(a-b);//5  
+System.out.println(a*b);//50  
+System.out.println(a/b);//2  
+System.out.println(a%b);//0  
+}}
+
+Sol for Q2:
+public class IncrementDecrement
+{
+   public static void main(String[] args)
+   {
+      int number = 50;
+
+      // Display the value in number.
+      System.out.println("Number is " + number);
+
+      // Increment number.
+      number++;
+
+      // Display the value in number.
+      System.out.println("Now, number is " + number);
+
+      // Decrement number.
+      number--;
+
+      // Display the value in number.
+      System.out.println("Now, number is " + number);
+   }
+}
+
+
+Sol for Q3:
+class Solution {
+
+    public static void main(String[] args){
+        int value1 = 1;
+        int value2 = 2;
+        if(value1 == value2)
+            System.out.println("value1 == value2");
+        if(value1 != value2)
+            System.out.println("value1 != value2");
+}}
+
+
+Sol for Q4:
+import java.util.Scanner;
+
+class EqualToAndNotEqualToOperator{
+	public static void main(String[] args){
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter any two numbers to check for equality: ");
+		int num1=in.nextInt();
+		int num2=in.nextInt();
+		if(num1==num2){
+		System.out.println("The two numbers are equal");
+		}
+		else if(num1!=num2){
+		System.out.println("The numbers are not equal");
+		}
+	}
+}
+
+
+Sol for Q5:
+class Solution {
+  public static void main(String[] args) {
+
+    // && operator
+    System.out.println((5 > 3) && (8 > 5));  // true
+    System.out.println((5 > 3) && (8 < 5));  // false
+
+    // || operator
+    System.out.println((5 < 3) || (8 > 5));  // true
+    System.out.println((5 > 3) || (8 < 5));  // true
+    System.out.println((5 < 3) || (8 < 5));  // false
+
+    // ! operator
+    System.out.println(!(5 == 3));  // true
+    System.out.println(!(5 > 3));  // false
+  }
+}
+
+
+Sol for Q6:
+
+class Solution {
+  public static void main(String[] args) {
+    
+    // create variables
+    int a = 7, b = 11;
+
+    // value of a and b
+    System.out.println("a is " + a + " and b is " + b);
+
+    // == operator
+    System.out.println(a == b);  // false
+
+    // != operator
+    System.out.println(a != b);  // true
+
+    // > operator
+    System.out.println(a > b);  // false
+
+    // < operator
+    System.out.println(a < b);  // true
+
+    // >= operator
+    System.out.println(a >= b);  // false
+
+    // <= operator
+    System.out.println(a <= b);  // true
+  }
+}
+
+
+Sol for Q7:
+
+import java.util.*;
+class SmallLarge
+{
+  public static void main(String args[])
+  {
+     int num1,num2;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("Enter The Two Numbers:");
+     num1=sc.nextInt();
+     num2=sc.nextInt();
+        if(num1<num2)
+           {
+              System.out.println(num1);              
+           }
+
+        else if(num2<num1)
+           {
+              System.out.println(num2);              
+           }    
+
+ }
+
+}
+
+
+
+
+
