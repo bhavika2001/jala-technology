@@ -1,0 +1,98 @@
+sol for Q1:
+
+class Student5{  
+    int id;  
+    String name;  
+    int age;  
+    //creating two arg constructor  
+    Student5(int i,String n){  
+    id = i;  
+    name = n;  
+    }  
+    //creating three arg constructor  
+    Student5(int i,String n,int a){  
+    id = i;  
+    name = n;  
+    age=a;  
+    }  
+    void display(){System.out.println(id+" "+name+" "+age);}  
+   
+    public static void main(String args[]){  
+    Student5 s1 = new Student5(111,"Karan");  
+    Student5 s2 = new Student5(222,"Aryan",25);  
+    s1.display();  
+    s2.display();  
+   }  
+}  
+
+sol for Q2:
+class Animal {
+
+  // default or no-arg constructor of class Animal
+  Animal() {
+    System.out.println("I am an animal");
+  }
+}
+
+class Dog extends Animal {
+
+  // default or no-arg constructor of class Dog
+  Dog() {
+
+    // calling default constructor of the superclass
+    super();
+
+    System.out.println("I am a dog");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Dog dog1 = new Dog();
+  }
+}
+
+sol for Q3:
+class Language {
+
+  // create a public static variable of class type
+  private static Language language;
+
+  // private constructor
+  private Language() {
+    System.out.println("Inside Private Constructor");
+  }
+
+  // public static method
+  public static Language getInstance() {
+
+     // create object if it's not already created
+     if(language == null) {
+        language = new Language();
+     }
+
+      // returns the singleton object
+      return language;
+  }
+
+  public void display() {
+      System.out.println("Singleton Pattern is achieved");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+     Language db1;
+
+     // call the getInstance method
+     db1= Language.getInstance();
+
+     db1.display();
+  }
+}
+
+sol for Q4:
+constructors dont have return type.
+
+sol for Q5:
+will give error
