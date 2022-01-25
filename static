@@ -1,0 +1,162 @@
+sol for Q1:
+
+class Solution
+{
+
+int a=5;//instance variable
+int b=2;
+    // This is a static method
+    static void myMethod1()
+    {
+        static int num1;
+
+
+        System.out.println(var1);
+    }
+
+static void myMethod2()
+    {
+        static int num2;
+
+
+        System.out.println(var2);
+    }
+ 
+    public static void main(String[] args)
+    {
+          /* You can see that we are calling this
+           * method without creating any object. 
+           */
+           myMethod1();
+myMethod2();
+Solution obj=new Solution();
+    }
+}
+
+sol for Q2:
+public class Test {
+   public int instanceVariable = 10;
+      public static void main(String args[]) {
+      Test test = new Test();
+      System.out.println(test.instanceVariable);
+   }
+}
+
+sol for Q3:
+import java.io.*;
+ 
+class Solution {
+ 
+    public static String Name = "";
+ 
+    public static void geek(String name)
+    {
+        Name = name;
+    }
+}
+ 
+class F {
+    public static void main(String[] args)
+    {
+ 
+        // Accessing the static method geek()
+        // and field by class name itself.
+        Geek.geek("vaibhav");
+        System.out.println(Geek.Name);
+ 
+        // Accessing the static method geek()
+        // by using Object's reference.
+         Solution obj = new Geek();
+        obj.geek("mohit");
+        System.out.println(obj.Name);
+    }
+}
+
+sol for Q4:
+Static methods can't access instance methods and instance variables directly. They must use reference to object. And static method can't use this keyword as there is no instance for 'this' to refer to.
+
+sol for Q5:
+
+import java.io.*;
+ 
+class Solution {
+ 
+    public static String Name = "";
+ 
+    public static void geek(String name)
+    {
+        Name = name;
+    }
+}
+ 
+class A {
+    public static void main(String[] args)
+    {
+ 
+        // Accessing the static method geek()
+        // and field by class name itself.
+        Geek.geek("vaibhav");
+        System.out.println(Geek.Name);
+ 
+        // Accessing the static method geek()
+        // by using Object's reference.
+        Solution obj = new Geek();
+        obj.geek("mohit");
+        System.out.println(obj.Name);
+    }
+}
+
+
+sol for Q6:
+
+class Student{  
+   int rollno;//instance variable  
+   String name;  
+   static String college ="ITS";//static variable  
+   //constructor  
+   Student(int r, String n){  
+   rollno = r;  
+   name = n;  
+   }  
+   //method to display the values  
+   void display (){System.out.println(rollno+" "+name+" "+college);}  
+}  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student s1 = new Student(111,"Karan");  
+ Student s2 = new Student(222,"Aryan");  
+ //we can change the college of all objects by the single line of code  
+ //Student.college="BBDIT";  
+ s1.display();  
+ s2.display();  
+ }  
+} 
+
+sol for Q7: 
+
+class Student{  
+   int rollno;//instance variable  
+   String name;  
+   static String college ="ITS";//static variable  
+   //constructor  
+   Student(int r, String n){  
+   rollno = r;  
+   name = n;  
+   }  
+   //method to display the values  
+   void display (){System.out.println(rollno+" "+name+" "+college);}  
+}  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student s1 = new Student(111,"Karan");  
+ Student s2 = new Student(222,"Aryan");  
+ //we can change the college of all objects by the single line of code  
+ //Student.college="BBDIT";  
+ s1.display();  
+ s2.display();  
+ }  
+}  
+
+
