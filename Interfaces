@@ -1,0 +1,209 @@
+Solfor Q1:
+interface printable{  
+void print();  
+}  
+class A6 implements printable{  
+public void print(){System.out.println("Hello");}  
+  
+public static void main(String args[]){  
+A6 obj = new A6();  
+obj.print();  
+ }  
+}  
+
+
+Solfor Q2:
+
+interface printable{  
+void print();
+void play();  
+}  
+class A6 implements printable{  
+public void print(){System.out.println("Hello");}  
+  
+public static void main(String args[]){  
+A6 obj = new A6();  
+obj.print();  
+ }  
+}
+
+Sol for Q3:
+
+interface In1
+{
+    // public, static and final
+    final int a = 10;
+  
+    // public and abstract 
+    void display();
+}
+  
+// A class that implements the interface.
+class TestClass implements In1
+{
+    // Implementing the capabilities of
+    // interface.
+    public void display()
+    {
+        System.out.println("Geek");
+    }
+  
+    // Driver Code
+    public static void main (String[] args)
+    {
+        TestClass t = new TestClass();
+        t.display();
+        System.out.println(a);
+    }
+}
+
+Sol for Q4:
+interface A
+{
+   public void a();
+}
+interface B
+{
+   public void a();
+}
+class Central implements A,B
+{
+   public void a()
+   {
+        //Any Code here
+   }
+   public static void main(String args[])
+   {
+        //Statements
+    }
+}
+
+Sol for Q5:
+
+interface A
+{
+   public void a();
+}
+interface B
+{
+   public void a();
+}
+class Central implements A,B
+{
+   public void a()
+   {
+        //Any Code here
+   }
+   public static void main(String args[])
+   {
+        //Statements
+    }
+}
+
+
+Sol for Q6:
+
+interface Sayable{  
+    // Default method   
+    default void say(){  
+        System.out.println("Hello, this is default method");  
+    }  
+    // Abstract method  
+    void sayMore(String msg);  
+}  
+public class DefaultMethods implements Sayable{  
+    public void sayMore(String msg){        // implementing abstract method   
+        System.out.println(msg);  
+    }  
+    public static void main(String[] args) {  
+        DefaultMethods dm = new DefaultMethods();  
+        dm.say();   // calling default method  
+        dm.sayMore("Work is worship");  // calling abstract method  
+  
+    }  
+} 
+
+
+Sol for Q7:
+
+public interface A
+{
+void mymethod1();
+void mymethod2();
+}
+
+public interface B : A
+{
+void mymethod3();
+}
+
+class Test : B
+{
+public void mymethod1()
+{
+System.out.println(“Implement method 1”);
+}
+public void mymethod2()
+{
+System.out.println(“Implement method 2”);
+}
+public void mymethod3()
+{
+System.out.println(“Implement method 3”);
+}
+}
+class Program
+{
+public static void Main(String[] args)
+{
+Test obj = new Test();
+obj.mymethod1();
+obj.mymethod2();
+obj.mymethod3();
+}
+}
+
+Sol for Q9:
+
+interface Operation {
+   default void addition() {
+      System.out.println("default method addition");
+   }
+   default void multiply() {
+      division();
+      System.out.println("default method multiply");
+   }
+   private void division() {         // private method
+      System.out.println("private method division");
+   }
+}
+
+class PrivateMethodTest implements Operation {
+   public static void main(String args[]) {
+      PrivateMethodTest test = new PrivateMethodTest();
+      test.multiply();
+   }
+}
+
+ 
+Sol for Q10:
+
+public interface Foo {
+
+    default void bar() {
+        System.out.print("Hello");
+        baz();
+    }
+
+    private void baz() {
+        System.out.println(" world!");
+    }
+}
+
+ 
+Sol for Q11:
+
+interface Sol
+{
+static final pi=3.16;
+}
